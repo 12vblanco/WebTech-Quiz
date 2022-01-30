@@ -1,0 +1,48 @@
+export const loveCard = {
+  answer: "Love",
+  choice1: "Love",
+  choice2: "Hate",
+  choice3: "Pain",
+  choice4: "Hope",
+  // pattern: "background : #ff0000",
+  colour1: ["height : 90%", "background : #ff0000"],
+  colour2: ["height : 0%", "background : #ff0000"],
+  colour3: ["height : 0%", "background : #ff0000"],
+  colour4: ["height : 10%", "background : #ea6284"],
+};
+export const hateCard = {
+  answer: "Hate",
+  choice1: "Love",
+  choice2: "Hate",
+  choice3: "Pain",
+  choice4: "Hope",
+  // pattern: "background : #ff0000",
+  colour1: ["height : 55%", "background : #ff0000"],
+  colour2: ["height : 0%", "background : #ff0000"],
+  colour3: ["height : 35%", "background : #000"],
+  colour4: ["height : 10%", "background : #fff504"],
+};
+export const heatCard = {
+  answer: "Heat",
+  choice1: "Calm",
+  choice2: "Heat",
+  choice3: "Excitement",
+  choice4: "Natural",
+  // pattern: "background : #ff0000",
+  colour1: ["height : 55%", "background : #ff0000"],
+  colour2: ["height : 0%", "background : #ff0000"],
+  colour3: ["height : 35%", "background : #fff504"],
+  colour4: ["height : 10%", "background : #ffa504"],
+};
+export const beautyCard = {
+  answer: "Beauty",
+  choice1: "The Lie",
+  choice2: "Light",
+  choice3: "Beauty",
+  choice4: "Artificial",
+  // pattern: "background : #ff0000",
+  colour1: ["height : 25%", "background : #646835"],
+  colour2: ["height : 26%", "background : #fff"],
+  colour3: ["height : 29%", "background : #ff0000"],
+  colour4: ["height : 20%", "background : #6C8491"],
+};

@@ -81,7 +81,7 @@ header {
 .pattern {
   width: 260px;
   height: 260px;
-  background: #f83d69;
+  /* background: #f83d69; */
   border-radius: 6px;
 }
 .colour1 {
