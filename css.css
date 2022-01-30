@@ -7,6 +7,11 @@
   font-family: "Electrolize", sans-serif;
   color: #fff;
 }
+
+a {
+  text-decoration: none;
+}
+
 body {
   height: 100vh;
   background: #222;
@@ -16,22 +21,99 @@ body {
 
 header {
   font-size: 62px;
-  padding: 2rem;
-  margin-bottom: -137px;
+  padding: 2rem 0 0 0;
+  /* margin-bottom: -137px; */
 }
 
 .main_container {
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   background: #222;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* INDEX */
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav_menus {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.nav_menu {
+  display: flex;
+  font-size: 22px;
+  justify-content: space-around;
+  margin: 0.4rem 3rem;
+}
+
+.nav_menu a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav_menu a:hover {
+  color: #fff504;
+  transition: all 0.4s ease-in-out;
+}
+
+.card2 {
+  width: 60%;
+  height: 70%;
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.btn_tutorial {
+  border: none;
+  width: 160px;
+  height: 60px;
+  border-radius: 6px;
+  background: #111;
+  font-size: 22px;
+  margin: -6rem 0 1rem 0;
+}
+
+.btn_tutorial:hover {
+  background: #fff504;
+  color: #111;
+  transition: all 0.4s ease-in-out;
+  font-weight: bolder;
+}
+
+.btn_quiz {
+  border: none;
+  width: 160px;
+  height: 60px;
+  border-radius: 6px;
+  background: #333;
+  font-size: 22px;
+}
+
+.btn_quiz:hover {
+  background: #fff504;
+  color: #111;
+  transition: all 0.4s ease-in-out;
+  font-weight: bolder;
+}
+
+/* QUIZ */
+
 .card {
   width: 60%;
   height: 70%;
@@ -146,4 +228,21 @@ header {
 }
 .radio_input:checked + .radio_radio::after {
   transform: scale(1);
+}
+
+/* REFERENCES */
+
+.card3 {
+  width: 60%;
+  height: 70%;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.ref_text {
+  max-width: 400px;
+  margin: 0 0 0 3rem;
 }
