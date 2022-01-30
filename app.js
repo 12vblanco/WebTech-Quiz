@@ -10,3 +10,15 @@ const loveCard = {
   colour3: ["height : 0%", "background : #ff0000"],
   colour4: ["height : 10%", "background : #ea6284"],
 };
+const hateCard = {
+  answer: "Hate",
+  choice1: "Love",
+  choice2: "Hate",
+  choice3: "Pain",
+  choice4: "Hope",
+  pattern: "background : #ff0000",
+  colour1: ["height : 55%", "background : #ff0000"],
+  colour2: ["height : 0%", "background : #ff0000"],
+  colour3: ["height : 35%", "background : #000"],
+  colour4: ["height : 10%", "background : #fff504"],
+};

@@ -64,7 +64,7 @@ header {
 
 .card_btn {
   font-size: 28px;
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 12px;
   background-color: #111;
   border: none;
@@ -85,21 +85,21 @@ header {
   border-radius: 6px;
 }
 .colour1 {
-  height: 25%;
+  height: 51%;
   background: #ff0000;
   border-radius: 3px 3px 0 0;
 }
 .colour2 {
-  height: 25%;
+  height: 0%;
   background: #ff0000;
 }
 .colour3 {
-  height: 40%;
-  background: #ff0000;
+  height: 35%;
+  background: #000;
 }
 .colour4 {
-  height: 10%;
-  background: #ea6284;
+  height: 14%;
+  background: #fff504;
   border-radius: 0 0 3px 3px;
 }
 
