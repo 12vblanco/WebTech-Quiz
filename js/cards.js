@@ -1,4 +1,4 @@
-export let Cards = [
+export const Cards = [
   {
     answer: "Love",
     choice1: "Love",
