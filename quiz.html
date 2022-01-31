@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Card</title>
   </head>
   <body>
@@ -19,16 +19,16 @@
       </div>
     </header>
     <div class="main_container">
-      <div class="card">
-        <div class="counter">1/10</div>
+      <div id="card">
+        <div id="counter">1/10</div>
         <div class="card_container">
-          <div class="pattern">
+          <div id="pattern">
             <div class="colour1"></div>
             <div class="colour2"></div>
             <div class="colour3"></div>
             <div class="colour4"></div>
           </div>
-          <div class="options">
+          <div id="options">
             <form action="">
               <label for="answer1" class="radio">
                 <input
@@ -38,7 +38,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <span class="ans1">Love</span> </label
+                <p id="answer">Love</p> </label
               ><br />
               <label for="answer2" class="radio">
                 <input
@@ -48,7 +48,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <span class="ans2">Hate</span> </label
+                <p id="answer">Hate</p> </label
               ><br />
               <label for="answer3" class="radio">
                 <input
@@ -58,7 +58,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <span class="ans3">Pain</span> </label
+                <p id="answer">Pain</p> </label
               ><br />
               <label for="answer4" class="radio">
                 <input
@@ -68,13 +68,13 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <span class="ans4">Joy</span> </label
+                <p id="answer">Joy</p> </label
               ><br />
             </form>
           </div>
         </div>
         <div class="card_navigation">
-          <button class="card_btn">Next</button>
+          <button id="card_btn">Next</button>
         </div>
       </div>
     </div>

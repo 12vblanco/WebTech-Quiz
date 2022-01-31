@@ -79,7 +79,7 @@ header {
   border-radius: 6px;
 }
 
-.btn_tutorial {
+#btn_tutorial {
   border: none;
   width: 160px;
   height: 60px;
@@ -90,14 +90,14 @@ header {
   cursor: pointer;
 }
 
-.btn_tutorial:hover {
+#btn_tutorial:hover {
   background: #fff504;
   color: #111;
   transition: all 0.4s ease-in-out;
   font-weight: bolder;
 }
 
-.btn_quiz {
+#btn_quiz {
   border: none;
   width: 160px;
   height: 60px;
@@ -107,7 +107,7 @@ header {
   cursor: pointer;
 }
 
-.btn_quiz:hover {
+#btn_quiz:hover {
   background: #fff504;
   color: #111;
   transition: all 0.4s ease-in-out;
@@ -116,9 +116,9 @@ header {
 
 /* QUIZ */
 
-.card {
+#card {
   width: 60%;
-  height: 70%;
+  min-height: 70vh;
   background: #222;
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@ header {
   border-radius: 6px;
 }
 
-.counter {
+#counter {
   display: flex;
   justify-content: flex-end;
   width: 90%;
@@ -146,7 +146,7 @@ header {
   width: 100%;
 }
 
-.card_btn {
+#card_btn {
   font-size: 22px;
   padding: 0.6rem 1rem;
   border-radius: 12px;
@@ -162,7 +162,7 @@ header {
 }
 
 /* PATTERN */
-.pattern {
+#pattern {
   width: 260px;
   height: 260px;
   /* background: #f83d69; */
@@ -188,7 +188,7 @@ header {
 }
 
 /* ANSWERS */
-.options {
+#options {
   display: flex;
   flex-direction: column;
   justify-content: center;
