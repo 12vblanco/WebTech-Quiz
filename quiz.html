@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/cards.css" />
+    <!-- <link rel="stylesheet" href="css/cards.css" /> -->
     <title>Card</title>
   </head>
   <body>
     <header>
-      <div class="name">Emotion's Colour Quiz</div>
+      <div class="name">PsyColour-Quiz</div>
       <div class="menu">
         <ul class="nav_menus">
-          <li class="nav_menu"><a href="/index.html">Home</a></li>
-          <li class="nav_menu"><a href="./quiz.html">Quiz</a></li>
-          <li class="nav_menu"><a href="./references.html">References</a></li>
+          <li class="nav_menu non_current"><a href="/index.html">Home</a></li>
+          <li class="nav_menu current"><a href="./quiz.html">Quiz</a></li>
+          <li class="nav_menu non_current">
+            <a href="./references.html">References</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -24,10 +26,7 @@
         <div id="counter">1/10</div>
         <div class="card_container">
           <div id="pattern">
-            <div class="colour1"></div>
-            <div class="colour2"></div>
-            <div class="colour3"></div>
-            <div class="colour4"></div>
+            <!-- <img src="img/patterns/love.svg" alt="colour pattern" /> -->
           </div>
           <div id="options">
             <form action="">
@@ -39,7 +38,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="answer">Love</p> </label
+                <p id="answer">x</p> </label
               ><br />
               <label for="answer2" class="radio">
                 <input
@@ -49,7 +48,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="answer">Hate</p> </label
+                <p id="answer">x</p> </label
               ><br />
               <label for="answer3" class="radio">
                 <input
@@ -59,7 +58,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="answer">Pain</p> </label
+                <p id="answer">x</p> </label
               ><br />
               <label for="answer4" class="radio">
                 <input
@@ -69,7 +68,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="answer">Joy</p> </label
+                <p id="answer">x</p> </label
               ><br />
             </form>
           </div>
@@ -77,6 +76,7 @@
         <div class="card_navigation">
           <button id="card_btn">Next</button>
         </div>
+        <div id="results"></div>
       </div>
     </div>
 
