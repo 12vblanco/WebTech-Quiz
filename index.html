@@ -5,24 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/flips.css" />
     <!-- <link rel="stylesheet" href="css/cards.css" /> -->
-        <title>Card</title>
+    <title>Card</title>
   </head>
   <body>
     <header>
       <div class="name">PsyColour-Quiz</div>
       <div class="menu">
         <ul class="nav_menus">
-          <li class="nav_menu current"><a href="#">Home</a></li>
-          <li class="nav_menu non_current"><a href="./quiz.html">Quiz</a></li>
-          <li class="nav_menu non_current"><a href="./references.html">References</a></li>
+          <li class="nav_menu current"><a href="#">HOME</a></li>
+          <li class="nav_menu non_current"><a href="./quiz.html">QUIZ</a></li>
+          <li class="nav_menu non_current">
+            <a href="./references.html">REFERENCES</a>
+          </li>
+          <!-- <li class="nav_menu" id="toggle">DARK</li> -->
         </ul>
       </div>
     </header>
     <div class="main_container">
       <div class="card2">
-        <button id="btn_tutorial" onclick="document.location='#'">?</a></button>
-        <button id="btn_quiz" onclick="document.location='./quiz.html'">Quiz</a></button>
+        <div class="button_container">
+          <div class="button_area">
+            <div class="button side-one">?</div>
+            <div class="button side-two">Tutorial</div>
+          </div>
+          <div class="button_area second">
+            <div class="button side-three">Quiz</div>
+            <div class="button side-four">Start</div>
+          </div>
+        </div>
       </div>
     </div>
 

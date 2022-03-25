@@ -38,27 +38,27 @@
 
 // export * as cards from "./cards.js";
 
-const quizQuestions = [
-  {
-    id: "Love",
-    choices: ["Love", "Hate", "Pain", "Hope"],
-    pattern: "img/patterns/love.svg",
-  },
-  {
-    id: "Heat",
-    choice1: "Calm",
-    choice2: "Heat",
-    choice3: "Excitement",
-    choice4: "Natural",
-    pattern: "img/patterns/heat.svg",
-  },
-  {
-    id: "Beauty",
-    choice1: "The Lie",
-    choice2: "Light",
-    choice3: "Beauty",
-    choice4: "Artificial",
-    pattern: "img/patterns/beauty.svg",
-  },
-];
+// const quizQuestions = [
+//   {
+//     id: "Love",
+//     choices: ["Love", "Hate", "Pain", "Hope"],
+//     pattern: "img/patterns/love.svg",
+//   },
+//   {
+//     id: "Heat",
+//     choice1: "Calm",
+//     choice2: "Heat",
+//     choice3: "Excitement",
+//     choice4: "Natural",
+//     pattern: "img/patterns/heat.svg",
+//   },
+//   {
+//     id: "Beauty",
+//     choice1: "The Lie",
+//     choice2: "Light",
+//     choice3: "Beauty",
+//     choice4: "Artificial",
+//     pattern: "img/patterns/beauty.svg",
+//   },
+// ];
 // to short out the questions in random order https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/

@@ -1,0 +1,28 @@
+/* REFERENCES */
+.card3 {
+  width: var(--card_width);
+  min-height: var(--card_min_h);
+  min-width: var(--card_min_w);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 3rem 1rem;
+}
+
+.card3 img {
+  position: relative;
+  max-width: 180px;
+  top: -13.2rem;
+}
+
+.ref_text {
+  width: 400px;
+  margin: 0 0 0 3rem;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: var(--roboto);
+}
