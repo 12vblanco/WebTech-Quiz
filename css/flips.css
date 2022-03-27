@@ -29,11 +29,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: var(--font_textLg);
   font-weight: bold;
   font-family: "Poppins";
-  border-radius: 8px;
-  border: 5px solid var(--black);
+  border-radius: var(--radius);
+  border: var(--borderLg);
 }
 
 .side-one {
@@ -56,4 +56,54 @@
   background: #f9cc01;
   transform: rotateX(90deg) translateZ(60px);
   text-transform: uppercase;
+}
+
+/* CARD FLIP TUTORIAL */
+.card2_back {
+  width: 100%;
+  min-height: var(--card_min_h);
+  min-width: var(--card_min_w);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card2_front {
+  width: var(--card_width);
+  min-height: var(--card_min_h);
+  min-width: var(--card_min_w);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  transform: rotateY(180deg);
+}
+
+.button_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: var(--radius);
+  border: var(--borderSm);
+}
+.tutorial {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: var(--radius);
+  border: var(--borderSm);
+  transform: rotateY(180deg);
 }

@@ -1,16 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
 
 :root {
+  /* COLOURS */
   --black: #262626;
   --white: #fff;
   --blue: #87cfdb;
   --yellow: #f9cc01;
-  --electro: "Electrolize", sans-serif;
-  --roboto: "Poppins", serif;
-  --button_font_size: 2.4rem;
+  --red: #842700;
+  --green: #55bf81;
+  --violet: #945f92;
+  --red2: #a24000;
+
+  /* FONTS */
+  --poppins: "Poppins", serif;
+  --font_header: 8rem;
+  --font_textXsm: 1.6rem;
+  --font_textSm: 2.4rem;
+  --font_textLg: 3.2rem;
+
   --card_width: 60%;
-  --card_min_h: 70vh;
+  --card_min_h: 60vh;
   --card_min_w: 60rem;
+  --borderLg: 5px solid var(--black);
+  --borderSm: 3.5px solid var(--black);
+  --radius: 8px;
+  --radiusLg: 16px;
+  --trans1: all 0.3s ease-in-out;
 }
 
 * {
@@ -21,9 +36,9 @@
 
 html {
   font-size: 62.5%;
-  font-family: var(--electro);
   text-align: center;
   justify-content: center;
+  font-family: var(--poppins);
 }
 
 body {
@@ -37,11 +52,29 @@ a {
 }
 
 header {
-  font-size: 8rem;
+  font-size: var(--font_header);
   padding: 2rem 0 0 0;
   font-weight: 600;
 }
 
+.c {
+  color: var(--red);
+}
+.o {
+  color: var(--green);
+}
+.l {
+  color: var(--violet);
+}
+.o2 {
+  color: var(--blue);
+}
+.u {
+  color: var(--red2);
+}
+.r {
+  color: var(--yellow);
+}
 /* NAVBAR */
 .menu {
   display: flex;
@@ -57,10 +90,9 @@ header {
 
 .nav_menu {
   display: flex;
-  font-size: 2.6rem;
+  font-size: var(--font_textSm);
   justify-content: space-around;
   margin: 0.4rem 3rem;
-  font-family: "Poppins";
 }
 
 .nav_menu a {
@@ -75,10 +107,10 @@ header {
 .non_current a:hover,
 .non_current a:active {
   color: var(--blue);
-  transition: all 0.2s ease-in-out;
+  transition: var(-- trans1);
 }
 
-/* BODY/CARD */
+/* BODY */
 
 .main_container {
   width: 80vw;
@@ -92,14 +124,19 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.card2 {
-  width: var(--card_width);
-  min-height: var(--card_min_h);
-  min-width: var(--card_min_w);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  border: 2px solid var(--black);
+.smaller-button_one {
+  position: relative;
+  backface-visibility: hidden;
+  padding: 0.6rem 1.6rem;
+  font-size: var(--font_textSm);
+  font-weight: bold;
+  font-family: "Poppins";
+  border-radius: var(--radius);
+  border: var(--borderLg);
+  cursor: pointer;
+  transition: var(--trans1);
+}
+
+.smaller-button_one:hover {
+  background-color: var(--yellow);
 }

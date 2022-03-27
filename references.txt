@@ -1,3 +1,5 @@
 flipping button
 https://www.youtube.com/watch?v=Lx7epWStV68
 
+toggle button
+http://jsfiddle.net/HvmmY/

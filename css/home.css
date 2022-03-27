@@ -1,0 +1,52 @@
+/* BODY/CARD */
+
+.card2 {
+  width: 100%;
+  min-height: var(--card_min_h);
+  min-width: var(--card_min_w);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TUTORIAL */
+
+.tutorial-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font_textXsm);
+}
+
+.tutorial-container_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 40%;
+  width: 100%;
+  padding: 4rem 0 0 0;
+}
+.tutorial-container_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  height: 20%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.tutorial-img {
+  width: 200px;
+}
+
+.tutorial-text {
+  width: 40%;
+}

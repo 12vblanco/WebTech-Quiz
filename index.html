@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/flips.css" />
     <!-- <link rel="stylesheet" href="css/cards.css" /> -->
     <title>Card</title>
   </head>
   <body>
     <header>
-      <div class="name">PsyColour-Quiz</div>
+      <div class="name">
+        Psy<span class="c">C</span><span class="o">o</span
+        ><span class="l">l</span><span class="o2">o</span
+        ><span class="u">u</span><span class="r">r</span>-Quiz
+      </div>
       <div class="menu">
         <ul class="nav_menus">
-          <li class="nav_menu current"><a href="#">HOME</a></li>
+          <li class="nav_menu current"><a href="./index.html">HOME</a></li>
           <li class="nav_menu non_current"><a href="./quiz.html">QUIZ</a></li>
           <li class="nav_menu non_current">
             <a href="./references.html">REFERENCES</a>
           </li>
-          <!-- <li class="nav_menu" id="toggle">DARK</li> -->
         </ul>
       </div>
     </header>
     <div class="main_container">
-      <div class="card2">
+      <div id="card2" class="card2_back">
         <div class="button_container">
           <div class="button_area">
             <div class="button side-one">?</div>
@@ -32,7 +36,39 @@
           </div>
           <div class="button_area second">
             <div class="button side-three">Quiz</div>
-            <div class="button side-four">Start</div>
+            <div class="button side-four start-quiz">Start</div>
+          </div>
+        </div>
+        <div class="tutorial">
+          <div class="tutorial-container">
+            <div class="tutorial-container_top">
+              <img
+                src="img\patterns\love.svg"
+                alt="A colour pattern"
+                class="tutorial-img"
+              />
+              <p class="tutorial-text">
+                This quiz will show you a series of colour patterns and a choice
+                of four possible sensations.
+              </p>
+            </div>
+            <div class="tutorial-container_top">
+              <p class="tutorial-text">
+                You will have to indicate which sensation the colour patter
+                reminds you and at the end you will know how many times you were
+                in agreement with the majority of the people who took the test
+              </p>
+              <img
+                src="img\patterns\hate.svg"
+                alt="A colour pattern"
+                class="tutorial-img"
+              />
+            </div>
+            <div class="tutorial-container_bottom">
+              <div class="smaller-button">
+                <div class="smaller-button_one tutorial-start-quiz">Start Quiz</div>
+              </div>
+            </div>            </div>
           </div>
         </div>
       </div>

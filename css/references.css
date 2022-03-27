@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: var(--radius);
   padding: 3rem 1rem;
 }
 
@@ -20,9 +20,8 @@
 .ref_text {
   width: 400px;
   margin: 0 0 0 3rem;
-  font-size: 16px;
+  font-size: var(--font_textXsm);
   text-align: left;
   font-weight: 500;
   line-height: 1.6;
-  font-family: var(--roboto);
 }
