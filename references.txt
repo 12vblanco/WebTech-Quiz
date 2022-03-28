@@ -3,3 +3,13 @@ https://www.youtube.com/watch?v=Lx7epWStV68
 
 toggle button
 http://jsfiddle.net/HvmmY/
+
+quiz guide
+https://www.youtube.com/watch?v=MxrGPP4F8Sc
+
+
+---------------------------
+
+Button animation inspiration
+https://www.youtube.com/watch?v=OOuH1RhS6p8&t=14s
+https://freefrontend.com/html-buttons-with-javascript/

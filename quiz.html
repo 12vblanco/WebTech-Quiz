@@ -27,13 +27,16 @@
     </header>
     <div class="main_container">
       <div id="card">
-        <div id="counter">1/10</div>
+        <!-- COUNTER -->
+        <div id="counter">x</div>
         <div class="card_container">
+          <!-- PATTERN -->
           <div id="pattern">
-            <!-- <img src="img/patterns/love.svg" alt="colour pattern" /> -->
+            <img src="#" alt="colour pattern" />
           </div>
+
           <div id="options">
-            <form action="">
+            <form action="POST">
               <label for="answer1" class="radio">
                 <input
                   type="radio"
@@ -42,8 +45,9 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="answer">x</p> </label
+                <p id="choice1">x</p> </label
               ><br />
+
               <label for="answer2" class="radio">
                 <input
                   type="radio"
@@ -52,8 +56,9 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="answer">x</p> </label
+                <p id="choice2">x</p> </label
               ><br />
+
               <label for="answer3" class="radio">
                 <input
                   type="radio"
@@ -62,8 +67,9 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="answer">x</p> </label
+                <p id="choice3">x</p> </label
               ><br />
+
               <label for="answer4" class="radio">
                 <input
                   type="radio"
@@ -72,18 +78,19 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="answer">x</p> </label
-              ><br />
+                <p id="choice4">x</p>
+              </label>
             </form>
           </div>
         </div>
         <div class="card_navigation">
-          <button id="card_btn">Next</button>
+          <div class="smaller-button_one">Next</div>
         </div>
         <div id="results"></div>
       </div>
     </div>
 
     <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/quiz.js"></script>
   </body>
 </html>

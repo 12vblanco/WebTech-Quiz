@@ -18,7 +18,7 @@
   --font_textSm: 2.4rem;
   --font_textLg: 3.2rem;
 
-  --card_width: 60%;
+  --card_width: 100%;
   --card_min_h: 60vh;
   --card_min_w: 60rem;
   --borderLg: 5px solid var(--black);

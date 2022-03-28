@@ -22,12 +22,17 @@
 
 .card_container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 40rem;
   justify-content: space-evenly;
 }
 
 .card_navigation {
-  width: 100%;
+  position: relative;
+  bottom: 0;
+  /* width: 100%; */
 }
 
 #card_btn {
@@ -61,28 +66,17 @@
   width: 100%;
 }
 
-/* .colour1_height {
-    height: 35%;
-  }
-  .colour2_height {
-    height: 35%;
-  }
-  .colour3_height {
-    height: 25%;
-  }
-  .colour4_height {
-    height: 16%;
-  } */
-
 /* ANSWERS */
 #options {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: left;
   min-width: 180px;
+  height: 100%;
   font-size: var(--font_textSm);
-  padding-top: 1rem;
+  padding-top: 2.2rem;
 }
 
 /* RADIO BUTTONS */
