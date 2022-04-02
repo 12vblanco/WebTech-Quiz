@@ -39,9 +39,27 @@ function startGame() {
   score = 0;
   availablePatterns = getRandomPatterns(patterns, MAX_PATTERNS);
   getNewPattern();
-
   console.log(patterns);
   console.log(availablePatterns);
+}
+
+function getNewPattern() {
+  if (availablePatterns.length === 0 || patternsCounter >= MAX_PATTERNS) {
+    localStorage.setItem("lastScore", score);
+    return (window.location.href = "/score.html");
+  }
+
+  patternsCounter++;
+  counter.innerHTML = ` ${patternsCounter} / ${MAX_PATTERNS}`;
+  let currentPattern = availablePatterns.shift();
+  patternImg.src = currentPattern.pattern;
+  answers.forEach((answer) => {
+    let randomIndex = Math.floor(Math.random() * answers.length);
+    answer.innerHTML = currentPattern.choices.shift();
+  });
+
+  console.log(currentPattern);
+  console.log(answers);
 }
 
 //getRandomPatterns & randomPatterns
@@ -57,42 +75,12 @@ function getRandomPatterns(arr, num) {
   return result;
 }
 
-//get new pattern
-function getNewPattern() {
-  if (availablePatterns.length === 0 || patternsCounter >= MAX_PATTERNS) {
-    localStorage.setItem("mostRecentScore", score);
-    return window.location.assign("/end.html");
-  }
-  patternsCounter++;
-  counter.innerHTML = ` ${patternsCounter} / ${MAX_PATTERNS}`;
-  let currentPattern = availablePatterns.shift();
-
-  patternImg.src = currentPattern.pattern;
-
-  //set the answer
-  answers.forEach((answer) => {
-    let randomIndex = Math.floor(Math.random() * answers.length);
-    answer.innerHTML = currentPattern.choices.shift();
-  });
-
-  // ramdomize the answers
-  // answers.forEach((answer) => {
-  //   let randomIndex = Math.floor(Math.random() * answers.length);
-  //   answer.innerHTML = currentPattern.choices.splice(randomIndex, 1);
-  // });
-
-  // .innerText = currentPattern.choices;
-
-  console.log(currentPattern);
-  console.log(answers);
-}
-
 //next onclick
 const nextPattern = (document.querySelector("#next").onclick =
   function goToNextPattern() {
     if (patternsCounter === MAX_PATTERNS) {
-      localStorage.setItem("mostRecentScore", score);
-      return window.location.assign("/end.html");
+      localStorage.setItem("lastScore", score);
+      return (window.location.href = "/score.html");
       // alert(
       //   "Game Over, your score is " + score + "\r\n" + " The game will restart"
       // );

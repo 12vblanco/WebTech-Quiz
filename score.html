@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/end.css" />
+    <link rel="stylesheet" href="css/score.css" />
     <title>Results</title>
   </head>
   <body>
@@ -28,13 +28,14 @@
     <div class="main_container">
         <!-- create 3 buttons inside a flex container  -->
         <div class="flex-container">
-            <p class="score-text">congratulations, your score is</p>
+            <p class="score-text"></p>
           <button class="scoreButton" onclick="window.location.href='./index.html'">Home</button>
-          <button class="scoreButton red" onclick="window.location.href='./quiz.html'">Replay</button>
-          <button class="scoreButton yellow" onclick="window.location.href='./ABOUT.html'">Save Score</button>
+          <button class="scoreButton yellow" onclick="window.location.href='./quiz.html'">Replay</button>
+          <input class="scoreButton none" id="name" type="text" name="name" placeholder="Enter Name">
+          <button class="scoreButton green" onclick="window.location.href='./save.html'">Save Score</button>
     </div>
 
     <!-- <script type="module" src="./js/app.js"></script> -->
-    <script type="module" src="./js/quiz.js"></script>
+    <script type="module" src="./js/score.js"></script>
   </body>
 </html>
