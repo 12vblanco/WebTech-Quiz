@@ -14,6 +14,7 @@
   /* FONTS */
   --poppins: "Poppins", serif;
   --font_header: 8rem;
+  --font_textXXsm: 1rem;
   --font_textXsm: 1.6rem;
   --font_textSm: 2.4rem;
   --font_textLg: 3.2rem;
@@ -127,7 +128,7 @@ header {
 .smaller-button_one {
   position: relative;
   backface-visibility: hidden;
-  padding: 0.6rem 1.6rem;
+  padding: 0.4rem 1.6rem;
   font-size: var(--font_textSm);
   font-weight: bold;
   font-family: "Poppins";
@@ -135,8 +136,14 @@ header {
   border: var(--borderLg);
   cursor: pointer;
   transition: var(--trans1);
+  background: var(--blue);
 }
 
 .smaller-button_one:hover {
-  background-color: var(--yellow);
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.4);
+  transform: scale(1.02);
+}
+.smaller-button_one:active {
+  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.6);
+  transform: scale(1.01);
 }

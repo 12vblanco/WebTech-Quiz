@@ -1,44 +1,105 @@
-import * as cards from "./cards.js";
+import patternsArray from "./cards.js";
 
-const img = document.querySelector("#pattern img");
-const counter = document.querySelector("#counter");
-let questions = [cards.love, cards.hate, cards.beauty, cards.heat, cards.power];
+const patternImg = document.querySelector("#pattern img");
+const counter = document.getElementById("counter");
+const answers = Array.from(document.getElementsByClassName("choice"));
+const next = document.getElementById("next");
+const choice1 = (document.querySelectorAll(".radio").checked = true);
+const output = document.querySelector(".output");
 
-// const choice1 = document.querySelector("#choice1");
+const radioButtons = document.querySelectorAll('input[name="answers"]');
+next.addEventListener("click", () => {
+  let selectedSize;
+  for (const radioButton of radioButtons) {
+    if (radioButton.checked) {
+      selectedSize = radioButton.value;
+      break;
+    }
+  }
+  // show the output:
+  output.innerText = selectedSize ? `` : `Select an emotion!!`;
+});
 
-img.src = "img/patterns/love.svg";
-choice1.innerText = cards.love.choice1;
-choice2.innerText = cards.love.choice2;
-choice3.innerText = cards.love.choice3;
-choice4.innerText = cards.love.choice4;
-counter.innerText = "1 / 6";
+console.log(choice1);
 
-console.log(questions);
+let patterns = patternsArray;
+let patternsCounter;
+let availablePatterns;
+let score;
 
-// let questionCounter;
-// let score;
-// const MAX_QUESTIONS = 3;
+//maxPatterns
+const MAX_PATTERNS = 5;
 
-// function startQuiz() {
-//   questionCounter = 0;
-//   score = 0;
-//   //   acceptingAnswers = true;
-//   //   scoreText.innerText = score;
-//   availableQuestions = getRandomQuestions(questions, MAX_QUESTIONS);
-//   getNewQuestion();
-// }
+function startGame() {
+  patternsCounter = 0;
+  score = 0;
+  availablePatterns = getRandomPatterns(patterns, MAX_PATTERNS);
+  getNewPattern();
 
-// const getRandomQuestions = (arr, n) => {
-//   let len = arr.length;
-//   if (n > len) {
-//     throw new RangeError(
-//       "getRandomQuestions: more elements taken than available"
-//     );
-//   }
+  console.log(patterns);
+  console.log(availablePatterns);
+}
 
-//   const shuffled = [...arr].sort(() => 0.5 - Math.random());
+//getRandomPatterns & randomPatterns
+function getRandomPatterns(arr, num) {
+  let result = new Array();
+  while (result.length < num) {
+    let randomIndex = Math.floor(Math.random() * arr.length);
+    let randomPatterns = arr[randomIndex];
+    if (!result.includes(randomPatterns)) {
+      result.push(randomPatterns);
+    }
+  }
+  return result;
+}
 
-//   return (selected = shuffled.slice(0, n));
-// };
+//get new pattern
+function getNewPattern() {
+  if (availablePatterns.length === 0 || patternsCounter >= MAX_PATTERNS) {
+    alert("Game Over, your score is " + score);
+    return;
+  }
+  patternsCounter++;
+  counter.innerHTML = ` ${patternsCounter} / ${MAX_PATTERNS}`;
+  let currentPattern = availablePatterns.shift();
 
-// startQuiz();
+  patternImg.src = currentPattern.pattern;
+
+  //set the answer
+  answers.forEach((answer) => {
+    //one unique choice for each
+    answer.innerHTML = currentPattern.choices.shift();
+  });
+
+  // .innerText = currentPattern.choices;
+
+  console.log(currentPattern);
+}
+
+//next onclick
+const nextPattern = (document.querySelector("#next").onclick =
+  function goToNextPattern() {
+    if (patternsCounter === MAX_PATTERNS) {
+      alert(
+        "Game Over, your score is " + score + "\r\n" + " The game will restart"
+      );
+      function restart() {
+        location.href = "./quiz.html";
+      }
+      restart();
+      return;
+    } else {
+      if (choice1) {
+        score++;
+        document.querySelector('input[name="answers"]:checked').checked = false;
+        getNewPattern();
+      } else {
+        score++;
+        getNewPattern();
+      }
+    }
+  });
+console.log(choice1);
+
+//startQuiz
+startGame();

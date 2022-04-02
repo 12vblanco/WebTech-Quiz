@@ -20,7 +20,7 @@
           <li class="nav_menu non_current"><a href="./index.html">HOME</a></li>
           <li class="nav_menu current"><a href="./quiz.html">QUIZ</a></li>
           <li class="nav_menu non_current">
-            <a href="./references.html">REFERENCES</a>
+            <a href="./ABOUT.html">ABOUT</a>
           </li>
         </ul>
       </div>
@@ -28,13 +28,16 @@
     <div class="main_container">
       <div id="card">
         <!-- COUNTER -->
-        <div id="counter">x</div>
+        <div class="counter">
+          <p class="counter-text">Pattern</p>
+          <p id="counter">x</p>
+        </div>
         <div class="card_container">
-          <!-- PATTERN -->
+          <!--question -->
           <div id="pattern">
             <img src="#" alt="colour pattern" />
           </div>
-
+          <!-- possible answers -->
           <div id="options">
             <form action="POST">
               <label for="answer1" class="radio">
@@ -45,7 +48,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="choice1">x</p> </label
+                <p class="choice" data-answer="1">x</p> </label
               ><br />
 
               <label for="answer2" class="radio">
@@ -56,7 +59,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="choice2">x</p> </label
+                <p class="choice" data-answer="2">x</p> </label
               ><br />
 
               <label for="answer3" class="radio">
@@ -67,7 +70,7 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="choice3">x</p> </label
+                <p class="choice" data-answer="3">x</p> </label
               ><br />
 
               <label for="answer4" class="radio">
@@ -78,19 +81,20 @@
                   class="radio_input"
                 />
                 <div class="radio_radio"></div>
-                <p id="choice4">x</p>
+                <p class="choice" data-answer="4">x</p>
               </label>
             </form>
           </div>
         </div>
         <div class="card_navigation">
-          <div class="smaller-button_one">Next</div>
+          <p class="output"></p>
+          <div id="next" class="smaller-button_one">Next</div>
         </div>
         <div id="results"></div>
       </div>
     </div>
 
-    <script type="module" src="./js/app.js"></script>
+    <!-- <script type="module" src="./js/app.js"></script> -->
     <script type="module" src="./js/quiz.js"></script>
   </body>
 </html>
