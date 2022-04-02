@@ -5,20 +5,24 @@ const counter = document.getElementById("counter");
 const answers = Array.from(document.getElementsByClassName("choice"));
 const next = document.getElementById("next");
 const choice1 = (document.querySelectorAll(".radio").checked = true);
-const output = document.querySelector(".output");
 
-const radioButtons = document.querySelectorAll('input[name="answers"]');
-next.addEventListener("click", () => {
-  let selectedSize;
-  for (const radioButton of radioButtons) {
-    if (radioButton.checked) {
-      selectedSize = radioButton.value;
-      break;
-    }
-  }
-  // show the output:
-  output.innerText = selectedSize ? `` : `Select an emotion!!`;
-});
+//ALERT FOR RADIO BUTTONS
+// const alert = document.querySelector(".output");
+
+// const radioButtons = document.querySelectorAll('input[name="answers"]');
+// next.addEventListener("click", () => {
+//   let selectedSize;
+//   for (const radioButton of radioButtons) {
+//     if (radioButton.checked) {
+//       selectedSize = radioButton.value;
+//       break;
+//     }
+//   }
+//   alert.innerText = selectedSize ? `` : `Select an emotion!!`;
+//   setTimeout(function () {
+//     document.querySelector(".output").innerHTML = "";
+//   }, 3000);
+// });
 
 console.log(choice1);
 
@@ -56,8 +60,8 @@ function getRandomPatterns(arr, num) {
 //get new pattern
 function getNewPattern() {
   if (availablePatterns.length === 0 || patternsCounter >= MAX_PATTERNS) {
-    alert("Game Over, your score is " + score);
-    return;
+    localStorage.setItem("mostRecentScore", score);
+    return window.location.assign("/end.html");
   }
   patternsCounter++;
   counter.innerHTML = ` ${patternsCounter} / ${MAX_PATTERNS}`;
@@ -67,27 +71,36 @@ function getNewPattern() {
 
   //set the answer
   answers.forEach((answer) => {
-    //one unique choice for each
+    let randomIndex = Math.floor(Math.random() * answers.length);
     answer.innerHTML = currentPattern.choices.shift();
   });
+
+  // ramdomize the answers
+  // answers.forEach((answer) => {
+  //   let randomIndex = Math.floor(Math.random() * answers.length);
+  //   answer.innerHTML = currentPattern.choices.splice(randomIndex, 1);
+  // });
 
   // .innerText = currentPattern.choices;
 
   console.log(currentPattern);
+  console.log(answers);
 }
 
 //next onclick
 const nextPattern = (document.querySelector("#next").onclick =
   function goToNextPattern() {
     if (patternsCounter === MAX_PATTERNS) {
-      alert(
-        "Game Over, your score is " + score + "\r\n" + " The game will restart"
-      );
-      function restart() {
-        location.href = "./quiz.html";
-      }
-      restart();
-      return;
+      localStorage.setItem("mostRecentScore", score);
+      return window.location.assign("/end.html");
+      // alert(
+      //   "Game Over, your score is " + score + "\r\n" + " The game will restart"
+      // );
+      // function restart() {
+      //   location.href = "./quiz.html";
+      // }
+      // restart();
+      // return;
     } else {
       if (choice1) {
         score++;

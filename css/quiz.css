@@ -46,6 +46,7 @@
   font-size: var(--font_textXsm);
   color: red;
   top: -6rem;
+  font-weight: 500;
 }
 
 #card_btn {
@@ -90,7 +91,7 @@
   min-width: 270px;
   height: 100%;
   font-size: var(--font_textSm);
-  padding: 2.2rem 0 0 5rem;
+  padding: 2.2rem 0 0 6rem;
 }
 
 /* RADIO BUTTONS */

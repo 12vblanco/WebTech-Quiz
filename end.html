@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/end.css" />
+    <title>Results</title>
+  </head>
+  <body>
+    <header>
+      <div class="name">
+        Psy<span class="c">C</span><span class="o">o</span
+        ><span class="l">l</span><span class="o2">o</span
+        ><span class="u">u</span><span class="r">r</span>-Quiz
+      </div>
+      <div class="menu">
+        <ul class="nav_menus">
+          <li class="nav_menu non_current"><a href="./index.html">HOME</a></li>
+          <li class="nav_menu non_current"><a href="./quiz.html">QUIZ</a></li>
+          <li class="nav_menu non_current">
+            <a href="./ABOUT.html">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="main_container">
+        <!-- create 3 buttons inside a flex container  -->
+        <div class="flex-container">
+            <p class="score-text">congratulations, your score is</p>
+          <button class="scoreButton" onclick="window.location.href='./index.html'">Home</button>
+          <button class="scoreButton red" onclick="window.location.href='./quiz.html'">Replay</button>
+          <button class="scoreButton yellow" onclick="window.location.href='./ABOUT.html'">Save Score</button>
+    </div>
+
+    <!-- <script type="module" src="./js/app.js"></script> -->
+    <script type="module" src="./js/quiz.js"></script>
+  </body>
+</html>
