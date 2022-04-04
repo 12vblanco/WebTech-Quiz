@@ -16,14 +16,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   width: 90%;
   font-size: var(--font_textLg);
   font-weight: 700;
 }
 .counter-text {
   margin-right: 1rem;
-  font-size: var(--font_textSm);
+  font-size: var(--font_textLg);
   padding-top: 0.1rem;
 }
 
@@ -39,6 +38,10 @@
 .card_navigation {
   position: relative;
   bottom: 0;
+}
+
+.hide {
+  display: none;
 }
 
 .output {
@@ -87,6 +90,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  font-weight: 600;
   text-align: left;
   min-width: 270px;
   height: 100%;
@@ -112,6 +116,7 @@
   margin-right: 10px;
   padding: 3px;
 }
+
 .radio_radio::after {
   content: "";
   width: 100%;
@@ -124,4 +129,12 @@
 }
 .radio_input:checked + .radio_radio::after {
   transform: scale(1);
+}
+
+/* CLASsAPPLIED */
+.correct {
+  color: lightgreen;
+}
+.incorrect {
+  color: lightcoral;
 }

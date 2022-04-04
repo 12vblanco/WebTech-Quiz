@@ -8,7 +8,7 @@
   height: 100px;
   width: 300px;
   transform-style: preserve-3d;
-  transition: transform 200ms ease-in-out;
+  transition: transform 320ms ease-in-out;
   transform: translateZ(-60px);
   cursor: pointer;
 }

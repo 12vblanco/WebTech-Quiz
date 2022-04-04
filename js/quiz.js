@@ -1,106 +1,82 @@
 import patternsArray from "./cards.js";
-
 const patternImg = document.querySelector("#pattern img");
 const counter = document.getElementById("counter");
 const answers = Array.from(document.getElementsByClassName("choice"));
-const next = document.getElementById("next");
-const choice1 = (document.querySelectorAll(".radio").checked = true);
-
-//ALERT FOR RADIO BUTTONS
-// const alert = document.querySelector(".output");
-
-// const radioButtons = document.querySelectorAll('input[name="answers"]');
-// next.addEventListener("click", () => {
-//   let selectedSize;
-//   for (const radioButton of radioButtons) {
-//     if (radioButton.checked) {
-//       selectedSize = radioButton.value;
-//       break;
-//     }
-//   }
-//   alert.innerText = selectedSize ? `` : `Select an emotion!!`;
-//   setTimeout(function () {
-//     document.querySelector(".output").innerHTML = "";
-//   }, 3000);
-// });
-
-console.log(choice1);
+const radio = Array.from(document.getElementsByClassName("radio_input"));
+// const next = document.getElementById("next");
+const choice1 = (document.querySelectorAll(".radio").checked = false);
 
 let patterns = patternsArray;
-let patternsCounter;
-let availablePatterns;
+let patternCounter;
+let availableAnswers;
 let score;
 
-//maxPatterns
 const MAX_PATTERNS = 5;
 
+let answersEntered;
+
 function startGame() {
-  patternsCounter = 0;
+  patternCounter = 0;
   score = 0;
-  availablePatterns = getRandomPatterns(patterns, MAX_PATTERNS);
+  answersEntered = true;
+  availableAnswers = getRandomPatterns(patterns, MAX_PATTERNS);
   getNewPattern();
-  console.log(patterns);
-  console.log(availablePatterns);
 }
 
-function getNewPattern() {
-  if (availablePatterns.length === 0 || patternsCounter >= MAX_PATTERNS) {
-    localStorage.setItem("lastScore", score);
-    return (window.location.href = "/score.html");
-  }
-
-  patternsCounter++;
-  counter.innerHTML = ` ${patternsCounter} / ${MAX_PATTERNS}`;
-  let currentPattern = availablePatterns.shift();
-  patternImg.src = currentPattern.pattern;
-  answers.forEach((answer) => {
-    let randomIndex = Math.floor(Math.random() * answers.length);
-    answer.innerHTML = currentPattern.choices.shift();
-  });
-
-  console.log(currentPattern);
-  console.log(answers);
-}
-
-//getRandomPatterns & randomPatterns
-function getRandomPatterns(arr, num) {
+const getRandomPatterns = (arr, num) => {
   let result = new Array();
   while (result.length < num) {
-    let randomIndex = Math.floor(Math.random() * arr.length);
-    let randomPatterns = arr[randomIndex];
+    let i = Math.floor(Math.random() * arr.length);
+    let randomPatterns = arr[i];
     if (!result.includes(randomPatterns)) {
       result.push(randomPatterns);
     }
   }
   return result;
-}
+};
 
-//next onclick
-const nextPattern = (document.querySelector("#next").onclick =
-  function goToNextPattern() {
-    if (patternsCounter === MAX_PATTERNS) {
-      localStorage.setItem("lastScore", score);
-      return (window.location.href = "/score.html");
-      // alert(
-      //   "Game Over, your score is " + score + "\r\n" + " The game will restart"
-      // );
-      // function restart() {
-      //   location.href = "./quiz.html";
-      // }
-      // restart();
-      // return;
-    } else {
-      if (choice1) {
-        score++;
-        document.querySelector('input[name="answers"]:checked').checked = false;
-        getNewPattern();
-      } else {
-        score++;
-        getNewPattern();
-      }
-    }
+const getNewPattern = () => {
+  if (availableAnswers.length === 0 || patternCounter >= MAX_PATTERNS) {
+    localStorage.setItem("lastScore", score);
+    return (window.location.href = "/score.html");
+  }
+
+  patternCounter++;
+  counter.innerHTML = ` ${patternCounter} / ${MAX_PATTERNS}`;
+  let currentPattern = availableAnswers.shift();
+  patternImg.src = currentPattern.pattern;
+  answers.forEach((answer) => {
+    answer.innerHTML = currentPattern.choices.shift();
   });
-console.log(choice1);
 
-//startQuiz
+  answers &&
+    radio.forEach((answer) => {
+      answer.addEventListener("click", (e) => {
+        if (!answersEntered) {
+          console.log("not entered");
+          return;
+        }
+        answersEntered = false;
+        const clickedAnswer = e.target;
+        const choice = clickedAnswer.id;
+        if (choice === currentPattern.answer) {
+          score++;
+          let classApplied = "correct";
+          clickedAnswer.parentElement.classList.add(classApplied);
+          setTimeout(() => {
+            clickedAnswer.parentElement.classList.remove(classApplied);
+            document.querySelector(
+              'input[name="answers"]:checked'
+            ).checked = false;
+            getNewPattern();
+            answersEntered = true;
+          }, 1000);
+        } else {
+          let classApplied = "incorrect";
+          clickedAnswer.parentElement.classList.add(classApplied);
+        }
+      });
+    });
+};
+
 startGame();
