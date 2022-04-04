@@ -1,9 +1,6 @@
 /* BODY/CARD */
 
 .card2 {
-  width: var(--card_width);
-  min-height: var(--card_min_h);
-  min-width: var(--card_min_w);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +41,7 @@
 }
 
 .tutorial-img {
-  width: 200px;
+  height: 200px;
 }
 
 .tutorial-text {

@@ -22,6 +22,7 @@
   --card_width: 100%;
   --card_min_h: 60vh;
   --card_min_w: 60rem;
+  --maxWidth: 900px;
   --borderLg: 5px solid var(--black);
   --borderSm: 3.5px solid var(--black);
   --radius: 8px;

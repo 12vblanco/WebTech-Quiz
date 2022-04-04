@@ -60,9 +60,10 @@
 
 /* CARD FLIP TUTORIAL */
 .card2_back {
-  width: 100%;
+  width: var(--card_width);
   min-height: var(--card_min_h);
   min-width: var(--card_min_w);
+  max-width: var(--maxWidth);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,6 +74,7 @@
   width: var(--card_width);
   min-height: var(--card_min_h);
   min-width: var(--card_min_w);
+  max-width: var(--maxWidth);
   display: flex;
   flex-direction: column;
   align-items: center;
