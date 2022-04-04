@@ -1,8 +1,4 @@
 /* Home Page Buttons */
-.button_container {
-  perspective: 800px;
-}
-
 .button_area {
   position: relative;
   height: 100px;
@@ -90,11 +86,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: var(--card_width);
+  min-height: var(--card_min_h);
+  min-width: var(--card_min_w);
+  max-width: var(--maxWidth);
   backface-visibility: hidden;
   border-radius: var(--radius);
   border: var(--borderSm);
+  perspective: 800px;
 }
 .tutorial {
   position: absolute;
