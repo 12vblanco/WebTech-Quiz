@@ -3,6 +3,7 @@
   width: var(--card_width);
   min-height: var(--card_min_h);
   min-width: var(--card_min_w);
+  max-width: var(--maxWidth);
   background: var(--white);
   display: flex;
   flex-direction: column;

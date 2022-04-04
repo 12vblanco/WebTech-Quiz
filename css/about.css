@@ -4,6 +4,7 @@
   min-height: var(--card_min_h);
   min-width: var(--card_min_w);
   background: var(--white);
+  max-width: var(--maxWidth);
   display: flex;
   align-items: center;
   justify-content: center;
