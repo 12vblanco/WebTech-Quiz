@@ -43,7 +43,7 @@ let patternsArray = [
   },
   {
     id: "8",
-    choices: ["BlInfidelity", "Artificial", "Extroversion", "Independence"],
+    choices: ["Infidelity", "Artificial", "Extroversion", "Independence"],
     pattern: "img/patterns/extroversion.svg",
     answer: "answer3",
   },
