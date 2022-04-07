@@ -85,7 +85,9 @@ const getNewPattern = () => {
               ).checked = false);
           }, 1000);
         }
-        getNewPattern();
+        setTimeout(() => {
+          getNewPattern();
+        }, 1000);
       });
     });
 };
