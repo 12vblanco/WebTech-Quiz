@@ -10,13 +10,13 @@ let patterns = patternsArray;
 let patternCounter;
 let availableAnswers;
 let score;
-let answersEntered;
+// let answersEntered;
 const MAX_PATTERNS = 5;
 
 function startGame() {
   patternCounter = 0;
   score = 0;
-  answersEntered = true;
+  // answersEntered = true;
   availableAnswers = getRandomPatterns(patterns, MAX_PATTERNS);
   getNewPattern();
 }
@@ -38,7 +38,7 @@ const getNewPattern = () => {
     localStorage.setItem("lastScore", score);
     return (window.location.href = "/score.html");
   }
-  answersEntered = true;
+  // answersEntered = true;
 
   patternCounter++;
   counter.innerHTML = ` ${patternCounter} / ${MAX_PATTERNS}`;
@@ -49,9 +49,8 @@ const getNewPattern = () => {
     answer.innerText = currentPattern.choices.shift();
   });
 
-  //desde aqui creo que es el problema
+  //I believe the problem starts here
 
-  //esto coje el click en la respuesta y el radio button
   answers &&
     radio.forEach((answer) => {
       answer.addEventListener("click", (e) => {
@@ -61,7 +60,7 @@ const getNewPattern = () => {
         console.log(currentPattern.answer);
         let classApplied = "incorrect";
 
-        //si la respuesta elegida es igual que la respuesta correcta
+        //if choice is = to correct answer
         if (choice === currentPattern.answer) {
           score++;
           classApplied = "correct";
@@ -73,7 +72,7 @@ const getNewPattern = () => {
               ).checked = false);
           }, 1000);
           console.log(score);
-          //si la respuesta elegida es incorrecta
+          //if not correct
         } else {
           console.log(score);
           classApplied = "incorrect";
@@ -94,8 +93,7 @@ const getNewPattern = () => {
 
 startGame();
 
-// esto es como lo tenia ayer pero no me funcionaba
-
+// this is how I had it until this morning
 //   answers &&
 //     radio.forEach((answer) => {
 //       answer.addEventListener("click", (e) => {
