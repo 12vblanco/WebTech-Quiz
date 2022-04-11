@@ -15,7 +15,7 @@ const goToQuiz2 = (document.querySelector(".tutorial-start-quiz").onclick =
     location.href = "./quiz.html";
   });
 
-const button = document.querySelector(".button");
+const button = document.querySelector(".playClick");
 
 button.addEventListener("click", function () {
   document.getElementById("click").play();
