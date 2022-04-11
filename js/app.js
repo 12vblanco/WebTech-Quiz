@@ -1,5 +1,3 @@
-// LINKS
-
 const card = document.getElementById("card2");
 const flipButton = (document.querySelector(".side-two").onclick =
   function flip() {
@@ -17,4 +15,9 @@ const goToQuiz2 = (document.querySelector(".tutorial-start-quiz").onclick =
     location.href = "./quiz.html";
   });
 
+const button = document.querySelector(".button");
+
+button.addEventListener("click", function () {
+  document.getElementById("click").play();
+});
 export default goToQuiz;
