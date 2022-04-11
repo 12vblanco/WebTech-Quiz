@@ -10,8 +10,6 @@ let patternCounter;
 let availableAnswers;
 let score;
 let answersEntered;
-let MAX_score;
-let lastScore;
 
 const MAX_PATTERNS = 5;
 let currentPattern;
@@ -37,14 +35,16 @@ const getRandomPatterns = (arr, num) => {
 
 const getNewPattern = () => {
   if (availableAnswers.length === 0) {
-    MAX_score = localStorage.getItem("MAX_score");
-    lastScore = localStorage.getItem("lastScore");
+    localStorage.setItem("lastScore", score);
+
+    let MAX_score = localStorage.getItem("MAX_score");
+    let lastScore = localStorage.getItem("lastScore");
     if (score > MAX_score) {
-      localStorage.setItem("MAX_score", lastScore);
-      MAX_score = localStorage.getItem("MAX_score");
-    } else {
-      localStorage.setItem("lastScore", score);
       localStorage.setItem("MAX_score", score);
+      // MAX_score = localStorage.getItem("MAX_score");
+      // } else {
+      //   localStorage.setItem("lastScore", score);
+      // localStorage.setItem("MAX_score", score);
     }
 
     return (window.location.href = "/score.html");
@@ -70,6 +70,8 @@ answers &&
       let classApplied = "incorrect";
 
       if (choice === currentPattern.answer) {
+        answersEntered = false;
+
         score++;
         classApplied = "correct";
         clickedAnswer.parentElement.classList.add(classApplied);
@@ -81,6 +83,8 @@ answers &&
         }, 1000);
         console.log(score);
       } else {
+        answersEntered = false;
+
         console.log(score);
         classApplied = "incorrect";
         clickedAnswer.parentElement.classList.add(classApplied);

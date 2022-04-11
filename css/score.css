@@ -31,7 +31,7 @@
 }
 
 .none {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .none:hover {
   background: transparent;
@@ -44,7 +44,7 @@
   margin-bottom: 1rem;
   width: 100%;
   font-weight: 600;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 #name {

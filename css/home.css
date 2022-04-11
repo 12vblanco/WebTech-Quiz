@@ -41,13 +41,6 @@
 }
 
 .tutorial-img {
-  height: 200px;
-}
-.tutorial-img1 {
   max-width: 90%;
   margin-left: 0.8rem;
-}
-
-.tutorial-text {
-  width: 40%;
 }
