@@ -2,6 +2,6 @@ const scoreText = document.querySelector(".score-text");
 const maxScoreText = document.querySelector(".MAX_score-text");
 
 scoreText.innerText =
-  "Congratulations! \n Your score is: " + localStorage.lastScore;
+  "congratulations! \n your score is: " + localStorage.lastScore;
 
-maxScoreText.innerText = "Your Maximum \nscore is: " + localStorage.MAX_score;
+maxScoreText.innerText = "your maximum \nscore is: " + localStorage.MAX_score;

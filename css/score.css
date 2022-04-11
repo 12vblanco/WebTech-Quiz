@@ -16,7 +16,7 @@
   color: var(--black);
   cursor: pointer;
   margin-top: 1rem;
-  width: 180px;
+  width: 200px;
   font-weight: 600;
 }
 
@@ -39,9 +39,19 @@
 
 .score-text {
   font-size: var(--font_textSm);
+  text-transform: capitalize;
   color: var(--black);
   margin-bottom: 1rem;
   width: 100%;
   font-weight: 600;
   padding-top: 4rem;
+}
+
+#name {
+  text-transform: uppercase;
+  text-align: center;
+}
+#name::placeholder {
+  text-transform: capitalize;
+  text-align: center;
 }
