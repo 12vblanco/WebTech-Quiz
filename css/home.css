@@ -44,7 +44,7 @@
   height: 200px;
 }
 .tutorial-img1 {
-  width: 98%;
+  max-width: 890px;
   margin-left: 0.8rem;
 }
 
