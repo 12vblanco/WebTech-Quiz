@@ -1,4 +1,12 @@
+/* IMPORT FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+/* IMPORT STYLES */
+@import "navbar.css";
+@import "home.css";
+@import "flips.css";
+@import "score.css";
+@import "about.css";
+@import "quiz.css";
 
 :root {
   /* COLOURS */
@@ -20,7 +28,7 @@
   --font_textLg: 3.2rem;
 
   --card_width: 100%;
-  --card_min_h: 60vh;
+  --card_min_h: 58rem;
   --card_min_w: 60rem;
   --maxWidth: 900px;
   --borderLg: 5px solid var(--black);
@@ -54,98 +62,7 @@ a {
   text-decoration: none;
 }
 
-header {
-  font-size: var(--font_header);
-  padding: 2rem 0 0 0;
-  font-weight: 600;
-}
-
-.c {
-  color: var(--red);
-}
-.o {
-  color: var(--green);
-}
-.l {
-  color: var(--violet);
-}
-.o2 {
-  color: var(--blue);
-}
-.u {
-  color: var(--red2);
-}
-.r {
-  color: var(--yellow);
-}
-/* NAVBAR */
-.menu {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.nav_menus {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-}
-
-.nav_menu {
-  display: flex;
-  font-size: var(--font_textSm);
-  justify-content: space-around;
-  margin: 0.4rem 3rem;
-}
-
-.nav_menu a {
-  cursor: pointer;
-  color: inherit;
-}
-
-.current {
-  color: var(--yellow);
-}
-
-.non_current a:hover,
-.non_current a:active {
-  color: var(--blue);
-  transition: var(-- trans1);
-}
-
-/* BODY */
-
-.main_container {
-  width: 80vw;
-  height: var(--card_min_h);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.smaller-button_one {
-  position: relative;
-  backface-visibility: hidden;
-  padding: 0.4rem 1.6rem;
-  font-size: var(--font_textSm);
-  font-weight: bold;
-  font-family: "Poppins";
-  border-radius: var(--radius);
-  border: var(--borderLg);
-  cursor: pointer;
-  transition: var(--trans2);
-  background: var(--blue);
-}
-
-.smaller-button_one:hover {
-  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.4);
-  transform: scale(1.02);
-}
-.smaller-button_one:active {
-  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.6);
-  transform: scale(1.01);
+.clearfix {
+  clear: both;
+  white-space: nowrap;
 }

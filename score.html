@@ -5,37 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/score.css" />
-    <title>Results</title>
+
+    <title>Psy-Colour-quiz Results</title>
   </head>
   <body>
     <header>
       <div class="name">
         Psy<span class="c">C</span><span class="o">o</span
         ><span class="l">l</span><span class="o2">o</span
-        ><span class="u">u</span><span class="r">r</span>-Quiz
+        ><span class="u">u</span><span class="r">r</span>-quiz
       </div>
       <div class="menu">
         <ul class="nav_menus">
-          <li class="nav_menu non_current"><a href="./index.html">HOME</a></li>
-          <li class="nav_menu non_current"><a href="./quiz.html">QUIZ</a></li>
+          <li class="nav_menu non_current"><a href="./index.html">home</a></li>
+          <li class="nav_menu non_current"><a href="./quiz.html">quiz</a></li>
           <li class="nav_menu non_current">
-            <a href="./ABOUT.html">ABOUT</a>
+            <a href="./about.html">about</a>
           </li>
         </ul>
       </div>
     </header>
-    <div class="main_container">
-        <div class="flex-container">
-            <p class="score-text"></p>
-            <p class="score-text MAX_score-text"></p>
-          <button class="scoreButton" onclick="window.location.href='./index.html'">Home</button>
-          <button class="scoreButton yellow" onclick="window.location.href='./quiz.html'">Replay</button>
-          <!-- <p class="score-text"> save your initials on<br/> to the hall of fame </p>
+    <!-- <div class="main_container"> -->
+    <div class="flex-container">
+      <p class="score-text"></p>
+      <p class="score-text MAX_score-text"></p>
+      <button class="scoreButton" onclick="window.location.href='./index.html'">
+        home
+      </button>
+      <button
+        class="scoreButton yellow"
+        onclick="window.location.href='./quiz.html'"
+      >
+        Replay
+      </button>
+      <!-- <p class="score-text"> save your initials on<br/> to the hall of fame </p>
 
           <input class="scoreButton none" id="name" type="text" name="name" maxlength="3" size="3" placeholder="Enter Initials">
           <button class="scoreButton green" onclick="window.location.href='./save.html'">Save Score</button> -->
     </div>
+    <!-- </div> -->
     <script type="module" src="./js/score.js"></script>
   </body>
 </html>
