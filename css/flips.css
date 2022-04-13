@@ -24,6 +24,7 @@
   position: absolute;
   backface-visibility: hidden;
   width: 100%;
+  max-width: 28rem;
   height: 100%;
   display: flex;
   justify-content: center;
