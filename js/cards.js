@@ -89,6 +89,84 @@ let patternsArray = [
     pattern: "img/patterns/selfishness.svg",
     answer: "answer4",
   },
+  {
+    id: "16",
+    choices: ["Erotism", "Power", "The Cold", "Kindness"],
+    pattern: "img/patterns/power.svg",
+    answer: "answer2",
+  },
+  {
+    id: "17",
+    choices: ["Optimism", "Power", "The Rest", "A lie"],
+    pattern: "img/patterns/rest.svg",
+    answer: "answer3",
+  },
+  {
+    id: "18",
+    choices: ["Strength", "Light", "The Rest", "Introversion"],
+    pattern: "img/patterns/strength.svg",
+    answer: "answer1",
+  },
+  {
+    id: "19",
+    choices: ["Artificial", "Trust", "Fantasy", "Harmony"],
+    pattern: "img/patterns/fantasy.svg",
+    answer: "answer3",
+  },
+  {
+    id: "20",
+    choices: ["Strength", "Optimism", "Fantasy", "Forbidden"],
+    pattern: "img/patterns/forbidden.svg",
+    answer: "answer4",
+  },
+  {
+    id: "21",
+    choices: ["Poisonous", "Trust", "Love", "Forbidden"],
+    pattern: "img/patterns/poisonous.svg",
+    answer: "answer1",
+  },
+  {
+    id: "22",
+    choices: ["Truth", "Courtesy", "Power", "Beauty"],
+    pattern: "img/patterns/courtesy.svg",
+    answer: "answer2",
+  },
+  {
+    id: "23",
+    choices: ["Pride", "Forbidden", "Happiness", "Luxury"],
+    pattern: "img/patterns/happiness.svg",
+    answer: "answer3",
+  },
+  {
+    id: "24",
+    choices: ["Pride", "Trust", "Beauty", "Optimism"],
+    pattern: "img/patterns/pride.svg",
+    answer: "answer1",
+  },
+  {
+    id: "25",
+    choices: ["Hope", "Rest", "Kindness", "Luxury"],
+    pattern: "img/patterns/luxury.svg",
+    answer: "answer4",
+  },
+  {
+    id: "26",
+    choices: ["Hope", "Modern", "Truth", "Poisonous"],
+    pattern: "img/patterns/modern.svg",
+    answer: "answer2",
+  },
+  {
+    id: "27",
+    choices: ["Hate", "Modern", "Dynamism", "Jealousy"],
+    pattern: "img/patterns/dynamism.svg",
+    answer: "answer3",
+  },
+  {
+    id: "28",
+    choices: ["Modern", "Modern", "Dynamism", "Healthy"],
+    pattern: "img/patterns/healthy.svg",
+    answer: "answer3",
+  },
 ];
 
 export default patternsArray;
