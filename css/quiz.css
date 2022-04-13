@@ -132,10 +132,28 @@
   transform: scale(1);
 }
 
-/* CLASsAPPLIED */
+/* CLAS APPLIED */
 .correct {
   color: lightgreen;
 }
 .incorrect {
   color: lightcoral;
+}
+
+@media screen and (max-width: 640px) {
+  #pattern img {
+    width: 160px;
+    height: 160px;
+    margin: 3rem 0 1rem 0;
+  }
+  .card_container {
+    flex-direction: column;
+  }
+  #options {
+    padding: 0;
+    align-items: center;
+  }
+  .counter {
+    justify-content: center;
+  }
 }

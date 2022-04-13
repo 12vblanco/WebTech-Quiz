@@ -1,40 +1,25 @@
 /* BODY/CARD */
 
 .card2 {
+  width: var(--card_width);
+  min-height: var(--card_min_h);
+  min-width: var(--card_min_w);
+  max-width: var(--maxWidth);
+  background: var(--white);
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-}
-
-/* TUTORIAL */
-
-.tutorial-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-size: var(--font_textXsm);
-  padding: 2rem;
-}
-
-.tutorial-img {
-  max-width: 90%;
-  margin-left: 0.8rem;
+  border: 4px solid var(--black);
+  border-radius: var(--radiusLg);
 }
 
 /* BODY */
 .main_container {
-  position: relative;
-  width: 80vw;
-  min-height: var(--card_min_h);
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  margin-top: 6rem;
 }
 
 .smaller-button_one {
@@ -58,4 +43,7 @@
 .smaller-button_one:active {
   box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.6);
   transform: scale(1.01);
+}
+
+@media screen and (max-width: 640px) {
 }

@@ -2,8 +2,9 @@ header {
   flex-direction: column;
   font-size: var(--font_header);
   font-weight: 600;
-  min-height: 18rem;
+  height: 18rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .c {
@@ -29,6 +30,10 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.name {
+  font-size: var(--font_textLogo);
 }
 
 .nav_menus {
@@ -57,4 +62,14 @@ header {
 .non_current a:active {
   color: var(--blue);
   transition: var(-- trans1);
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    height: 90px;
+  }
+
+  .nav_menus {
+    width: 260px;
+  }
 }

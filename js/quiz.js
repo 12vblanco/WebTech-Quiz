@@ -5,6 +5,8 @@ const counter = document.getElementById("counter");
 const answers = Array.from(document.getElementsByClassName("choice"));
 const radio = Array.from(document.getElementsByClassName("radio_input"));
 
+console.log(patternImg.innerHTML);
+
 let patterns = patternsArray;
 let patternCounter;
 let availableAnswers;

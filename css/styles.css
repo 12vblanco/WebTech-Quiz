@@ -26,10 +26,11 @@
   --font_textXsm: 1.6rem;
   --font_textSm: 2.4rem;
   --font_textLg: 3.2rem;
+  --font_textLogo: 7rem;
 
   --card_width: 100%;
-  --card_min_h: 58rem;
-  --card_min_w: 60rem;
+  --card_min_h: 52rem;
+  --card_min_w: 50rem;
   --maxWidth: 900px;
   --borderLg: 5px solid var(--black);
   --borderSm: 3.5px solid var(--black);
@@ -62,7 +63,13 @@ a {
   text-decoration: none;
 }
 
-.clearfix {
-  clear: both;
-  white-space: nowrap;
+@media screen and (max-width: 640px) {
+  :root {
+    --card_min_h: 32rem;
+    --card_min_w: 20rem;
+    --font_textLogo: 3.4rem;
+    --radius: 4px;
+    --font_textSm: 1.6rem;
+    --font_textLg: 2.6rem;
+  }
 }
