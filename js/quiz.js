@@ -38,13 +38,8 @@ const getNewPattern = () => {
     localStorage.setItem("lastScore", score);
 
     let MAX_score = localStorage.getItem("MAX_score");
-    // let lastScore = localStorage.getItem("lastScore");
     if (score > MAX_score) {
       localStorage.setItem("MAX_score", score);
-      // MAX_score = localStorage.getItem("MAX_score");
-      // } else {
-      //   localStorage.setItem("lastScore", score);
-      // localStorage.setItem("MAX_score", score);
     }
     if ((MAX_score = null)) {
       MAX_score = score;

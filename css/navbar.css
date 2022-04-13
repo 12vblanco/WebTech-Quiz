@@ -1,0 +1,60 @@
+header {
+  flex-direction: column;
+  font-size: var(--font_header);
+  font-weight: 600;
+  min-height: 18rem;
+  text-transform: uppercase;
+}
+
+.c {
+  color: var(--red);
+}
+.o {
+  color: var(--green);
+}
+.l {
+  color: var(--violet);
+}
+.o2 {
+  color: var(--blue);
+}
+.u {
+  color: var(--red2);
+}
+.r {
+  color: var(--yellow);
+}
+/* NAVBAR */
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav_menus {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.nav_menu {
+  display: flex;
+  font-size: var(--font_textSm);
+  justify-content: space-around;
+  margin: 0.4rem 3rem;
+}
+
+.nav_menu a {
+  cursor: pointer;
+  color: inherit;
+}
+
+.current {
+  color: var(--yellow);
+}
+
+.non_current a:hover,
+.non_current a:active {
+  color: var(--blue);
+  transition: var(-- trans1);
+}
