@@ -137,12 +137,18 @@
   .button {
     width: 80%;
   }
+  .tutorial {
+    border: none;
+  }
   .tutorial-container {
     height: 400px;
-    padding: 1rem;
+    padding: 0.4rem;
   }
   .tutorial-img {
     max-width: 100%;
     margin-left: 0rem;
+  }
+  .button_container {
+    border: none;
   }
 }
