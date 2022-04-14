@@ -104,6 +104,11 @@
 .radio_input {
   display: none;
 }
+
+.choice {
+  font-weight: 600;
+}
+
 .radio_radio {
   width: 1.25em;
   height: 1.25em;
