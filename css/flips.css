@@ -120,6 +120,7 @@
 .tutorial_bottom {
   display: flex;
   margin-bottom: 2rem;
+  background: white;
 }
 
 .tutorial img {
