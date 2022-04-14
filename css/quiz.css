@@ -163,6 +163,12 @@ form {
   #options {
     padding: 0;
     align-items: center;
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    padding-left: 8rem;
+    margin-top: 1rem;
   }
   .counter {
     justify-content: center;
