@@ -157,5 +157,6 @@
   .tutorial_top,
   .tutorial_bottom {
     flex-direction: column;
+    background: white;
   }
 }
