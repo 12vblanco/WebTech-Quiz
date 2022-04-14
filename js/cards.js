@@ -97,13 +97,13 @@ let patternsArray = [
   },
   {
     id: "17",
-    choices: ["Optimism", "Power", "The Rest", "A lie"],
+    choices: ["Optimism", "Power", "Rest", "A lie"],
     pattern: "img/patterns/rest.svg",
     answer: "answer3",
   },
   {
     id: "18",
-    choices: ["Strength", "Light", "The Rest", "Introversion"],
+    choices: ["Strength", "Light", "Rest", "Introversion"],
     pattern: "img/patterns/strength.svg",
     answer: "answer1",
   },

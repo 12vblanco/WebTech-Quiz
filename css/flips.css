@@ -113,14 +113,19 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-size: var(--font_textXsm);
   padding: 2rem;
 }
 
-.tutorial-img {
-  max-width: 80%;
-  margin-left: 0.8rem;
+.tutorial_top,
+.tutorial_bottom {
+  display: flex;
+  margin-bottom: 2rem;
 }
+
+.tutorial img {
+  width: 260px;
+}
+
 .tutorial {
   position: absolute;
   display: flex;
@@ -141,14 +146,16 @@
     border: none;
   }
   .tutorial-container {
-    height: 400px;
+    height: auto;
+    margin-top: 26rem;
     padding: 0.4rem;
   }
-  .tutorial-img {
-    max-width: 100%;
-    margin-left: 0rem;
-  }
+
   .button_container {
     border: none;
+  }
+  .tutorial_top,
+  .tutorial_bottom {
+    flex-direction: column;
   }
 }

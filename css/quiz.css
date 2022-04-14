@@ -104,9 +104,16 @@
 .radio_input {
   display: none;
 }
-
+form {
+  display: flex;
+  flex-direction: column;
+}
 .choice {
   font-weight: 600;
+}
+.choice::first-letter {
+  font-size: 2.6rem;
+  font-weight: 500;
 }
 
 .radio_radio {
@@ -142,12 +149,13 @@
 
 @media screen and (max-width: 640px) {
   #pattern img {
-    width: 160px;
-    height: 160px;
-    margin: 5rem 0 2rem 0;
+    width: 200px;
+    height: 200px;
+    margin: 5rem 0 3rem 0;
   }
   .card_container {
     flex-direction: column;
+    height: auto;
   }
   #card {
     border: none;
