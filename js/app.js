@@ -15,9 +15,12 @@ const goToQuiz2 = (document.querySelector(".tutorial-start-quiz").onclick =
     location.href = "./quiz.html";
   });
 
-const button = document.querySelector(".playClick");
+const buttons = document.querySelectorAll(".clickButton");
 
-button.addEventListener("click", function () {
-  document.getElementById("click").play();
-});
+for (let button of buttons) {
+  button.addEventListener("click", function () {
+    document.getElementById("click").play("click.mp3");
+  });
+}
+
 export default goToQuiz;

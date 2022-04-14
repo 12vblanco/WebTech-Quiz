@@ -11,17 +11,21 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="120" />
     <meta property="og:image:height" content="120" />
+    <meta
+      property="description"
+      content="This online quiz shows the user different colour patterns and four possible emotions. One of the emotions was chosen by the highest number of people in a two thousand participants study"
+    />
 
-    <title>Psy-Colour-quiz</title>
+    <title>PsyColour Quiz</title>
   </head>
   <body>
     <audio src="./click.mp3" id="click"></audio>
     <header>
-      <p class="name">
+      <h1 class="name">
         Psy<span class="c">C</span><span class="o">o</span
         ><span class="l">l</span><span class="o2">o</span
         ><span class="u">u</span><span class="r">r</span>quiz
-      </p>
+      </h1>
       <div class="menu">
         <ul class="nav_menus">
           <li class="nav_menu current"><a href="./index.html">home</a></li>
@@ -36,37 +40,41 @@
       <div id="card2" class="card2_back">
         <div class="button_container">
           <div class="button_area">
-            <div class="button side-one playClick" onclick="playAudio()">?</div>
-            <div class="button side-two playClick" onclick="playAudio()">
-              Tutorial
-            </div>
+            <div class="button side-one clickButton">?</div>
+            <div class="button side-two clickButton">Tutorial</div>
           </div>
           <div class="button_area second">
-            <div class="button side-three playClick" onclick="playAudio()">
-              quiz
-            </div>
-            <div
-              class="button side-four start-quiz playClick"
-              onclick="playAudio()"
-            >
-              Start
-            </div>
+            <div class="button side-three clickButton">quiz</div>
+            <div class="button side-four start-quiz clickButton">Start</div>
           </div>
         </div>
         <div class="tutorial">
           <div class="tutorial-container">
-            <img
-              src="img/tutorial_love.png"
-              alt="A colour pattern"
-              class="tutorial-img"
-            />
-            <img
-              src="img/tutorial_brutalism.png"
-              alt="A colour pattern"
-              class="tutorial-img"
-            />
-            <div class="smaller-button">
-              <div class="smaller-button_one tutorial-start-quiz">
+            <div class="turtorial_top">
+              <img
+                src="img/tutorial_love.png"
+                alt="A colour pattern"
+                class="tutorial-img"
+              />
+              <img
+                src="img/tutorial_love-text.png"
+                alt="This quiz will show you a series of colour patterns and a choice of four possible sensations."
+              />
+            </div>
+            <div class="turtorial_bottom">
+              <img
+                src="img/tutorial_brutalism-text.png"
+                alt="Choose the sensation that the colour pattern produces to you.
+                Your will score against results from 2000 participants"
+              />
+              <img
+                src="img/tutorial_brutalism.png"
+                alt="A colour pattern"
+                class="tutorial-img"
+              />
+            </div>
+            <div class="smaller-button clickButton">
+              <div class="smaller-button_one tutorial-start-quiz clickButton">
                 Start quiz
               </div>
             </div>

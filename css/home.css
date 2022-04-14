@@ -34,6 +34,7 @@
   cursor: pointer;
   transition: var(--trans2);
   background: var(--blue);
+  margin-top: 3rem;
 }
 
 .smaller-button_one:hover {
