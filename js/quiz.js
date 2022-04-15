@@ -101,3 +101,5 @@ answers &&
     });
   });
 startGame();
+
+export default quiz;
