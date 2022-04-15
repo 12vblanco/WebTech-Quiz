@@ -163,11 +163,11 @@ form {
   #options {
     padding: 0;
     align-items: center;
-    width: 100%;
+    width: 340px;
   }
   form {
     width: 100%;
-    padding-left: 8rem;
+    padding-left: 12rem;
     margin-top: 1rem;
   }
   .counter {
