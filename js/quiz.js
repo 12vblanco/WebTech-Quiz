@@ -13,7 +13,7 @@ let availableAnswers;
 let score;
 let answersEntered;
 
-const MAX_PATTERNS = 5;
+const MAX_PATTERNS = 6;
 let currentPattern;
 function startGame() {
   patternCounter = 0;
