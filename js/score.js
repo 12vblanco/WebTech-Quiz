@@ -1,5 +1,6 @@
 const scoreText = document.querySelector(".score-text");
 const maxScoreText = document.querySelector(".MAX_score-text");
+const scoreText2 = document.querySelector(".score-text2");
 
 let MAX_PATTERNS = 6;
 

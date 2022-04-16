@@ -46,6 +46,11 @@
   transform: rotateX(90deg) translateZ(60px);
   text-transform: uppercase;
 }
+.side-two2 {
+  background: #87cfdb;
+  transform: rotateX(90deg) translateZ(60px);
+  text-transform: uppercase;
+}
 
 .side-three {
   transform: translateZ(60px);
