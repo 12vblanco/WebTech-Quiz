@@ -7,7 +7,7 @@
   height: 100%;
   padding-top: 8rem;
 }
-
+/* 
 .scoreButton {
   font-size: var(--font_textSm);
   padding: 0.9rem 1.8rem;
@@ -29,6 +29,10 @@
 }
 .green:hover {
   background: var(--green);
+} */
+
+.fa-solid {
+  color: var(--black);
 }
 
 .none {
@@ -46,6 +50,23 @@
   width: 100%;
   font-weight: 600;
   padding-top: 2rem;
+}
+.score-text2 {
+  font-size: var(--font_textXsm);
+  text-transform: capitalize;
+  color: var(--black);
+  margin-bottom: 1rem;
+  width: 360px;
+  font-weight: 600;
+  padding-top: 0.4rem;
+}
+
+.MAX_score-text {
+  margin-bottom: 4rem;
+}
+
+.button_area {
+  width: 250px;
 }
 
 #name {
