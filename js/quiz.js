@@ -12,7 +12,6 @@ let patternCounter;
 let availableAnswers;
 let score;
 let answersEntered;
-
 const MAX_PATTERNS = 6;
 let currentPattern;
 function startGame() {
@@ -101,5 +100,3 @@ answers &&
     });
   });
 startGame();
-
-export default quiz;
