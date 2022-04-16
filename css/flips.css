@@ -101,10 +101,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: var(--card_width);
-  min-height: var(--card_min_h);
+  /* width: var(--card_width); */
+  /* min-height: var(--card_min_h);
   min-width: var(--card_min_w);
-  max-width: var(--maxWidth);
+  max-width: var(--maxWidth); */
   backface-visibility: hidden;
   border-radius: var(--radius);
   border: var(--borderSm);
@@ -114,6 +114,8 @@
 /* TUTORIAL */
 
 .tutorial-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -129,11 +131,13 @@
 }
 
 .tutorial img {
-  width: 260px;
+  width: 280px;
 }
 
 .tutorial {
   position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
