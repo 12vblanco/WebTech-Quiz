@@ -51,6 +51,7 @@ html {
   text-align: center;
   justify-content: center;
   font-family: var(--poppins);
+  caret-color: transparent;
 }
 
 body {
