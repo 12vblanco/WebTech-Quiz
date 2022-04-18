@@ -5,8 +5,6 @@ const counter = document.getElementById("counter");
 const answers = Array.from(document.getElementsByClassName("choice"));
 const radio = Array.from(document.getElementsByClassName("radio_input"));
 
-console.log(patternImg.innerHTML);
-
 let patterns = patternsArray;
 let patternCounter;
 let availableAnswers;
@@ -64,8 +62,8 @@ answers &&
     answer.addEventListener("click", (e) => {
       const clickedAnswer = e.target;
       const choice = clickedAnswer.id;
-      console.log(choice);
-      console.log(currentPattern.answer);
+      console.log(`chosen ${choice}`);
+      console.log(`your ${currentPattern.answer}`);
       let classApplied = "incorrect";
 
       if (choice === currentPattern.answer) {
@@ -79,12 +77,12 @@ answers &&
             (document.querySelector(
               'input[name="answers"]:checked'
             ).checked = false);
-        }, 1000);
-        console.log(score);
+        }, 700);
+        console.log(`score ${score}`);
       } else {
         answersEntered = false;
 
-        console.log(score);
+        console.log(`score ${score}`);
         classApplied = "incorrect";
         clickedAnswer.parentElement.classList.add(classApplied);
         setTimeout(() => {
@@ -92,11 +90,11 @@ answers &&
             (document.querySelector(
               'input[name="answers"]:checked'
             ).checked = false);
-        }, 1000);
+        }, 500);
       }
       setTimeout(() => {
         getNewPattern();
-      }, 1000);
+      }, 700);
     });
   });
 startGame();

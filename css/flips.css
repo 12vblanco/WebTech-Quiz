@@ -17,7 +17,7 @@
 }
 
 .second {
-  margin-top: 2rem;
+  margin-top: 1.8rem;
 }
 
 .button {
@@ -132,6 +132,14 @@
 
 .tutorial img {
   width: 280px;
+}
+
+.tutorial_text {
+  font-size: var(--font_textXsm);
+  font-weight: 500;
+  margin-top: 2.4rem;
+  max-width: 400px;
+  text-align: center;
 }
 
 .tutorial {

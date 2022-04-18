@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       rel="stylesheet"
       type="text/css"
     />
-
-    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16" />
-
     <meta property="og:image" content="img/social.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="120" />
     <meta property="og:image:height" content="120" />
+    <meta
+      property="description"
+      content="This online quiz shows the user different colour patterns and four possible emotions. One of the emotions was chosen by the highest number of people in a two thousand participants study"
+    />
 
-    <title>Psy-Colour-quiz Results</title>
+    <title>PsyColour Quiz</title>
   </head>
   <body>
     <header>
@@ -37,8 +39,6 @@
         </ul>
       </nav>
     </header>
-    <!-- <div class="main_container"> -->
-
     <div class="flex-container">
       <p class="score-text"></p>
       <p class="score-text2">
@@ -46,15 +46,6 @@
         different!
       </p>
       <p class="score-text MAX_score-text"></p>
-      <!-- <button class="scoreButton" onclick="window.location.href='./index.html'">
-        Home
-      </button>
-      <button
-        class="scoreButton yellow"
-        onclick="window.location.href='./quiz.html'"
-      >
-        Replay
-      </button> -->
       <div class="button_area">
         <div class="button side-one clickButton">
           <i class="fa-solid fa-house"></i>
@@ -78,7 +69,7 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./js/score.js"></script>
     <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/score.js"></script>
   </body>
 </html>

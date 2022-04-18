@@ -148,10 +148,16 @@ form {
 }
 
 @media screen and (max-width: 640px) {
+  #pattern {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
   #pattern img {
     width: 200px;
     height: 200px;
-    margin: 5rem 0 3rem 0;
+    margin: 2rem 0 1rem 0;
   }
   .card_container {
     flex-direction: column;
