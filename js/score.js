@@ -31,4 +31,5 @@ function scoreMsg() {
     scoreText2.innerText = "You Are Awesome, perfect Score!!";
   }
 }
+
 scoreMsg();
