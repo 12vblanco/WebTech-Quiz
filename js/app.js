@@ -1,3 +1,5 @@
+// onclick actions for main buttons
+
 const card = document.getElementById("card2");
 const flipButton = (document.querySelector(".side-two").onclick =
   function flip() {

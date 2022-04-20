@@ -61,7 +61,7 @@ header {
 .non_current a:hover,
 .non_current a:active {
   color: var(--blue);
-  transition: var(-- trans1);
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 640px) {

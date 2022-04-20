@@ -12,6 +12,8 @@ let score;
 let answersEntered;
 const MAX_PATTERNS = 6;
 let currentPattern;
+
+// Main function that runs the game
 function startGame() {
   patternCounter = 0;
   score = 0;
@@ -19,6 +21,8 @@ function startGame() {
   availableAnswers = getRandomPatterns(patterns, MAX_PATTERNS);
   getNewPattern();
 }
+
+// selects patterns from the Patterns Array imported from cards.js equal to MAX_PATTERNS
 const getRandomPatterns = (arr, num) => {
   let result = new Array();
   while (result.length < num) {
@@ -32,6 +36,8 @@ const getRandomPatterns = (arr, num) => {
   return result;
 };
 
+// checks if the game is over and sets score in local memory;
+// if not it gets a new pattern from the chosen ones
 const getNewPattern = () => {
   if (availableAnswers.length === 0) {
     localStorage.setItem("lastScore", score);
@@ -57,13 +63,15 @@ const getNewPattern = () => {
     answer.innerText = currentPattern.choices.shift();
   });
 };
+
+// Adds functionality to quiz and changes colour of answers, sets timer between patterns, sets score...
 answers &&
   radio.forEach((answer) => {
     answer.addEventListener("click", (e) => {
       const clickedAnswer = e.target;
       const choice = clickedAnswer.id;
       console.log(`chosen ${choice}`);
-      console.log(`your ${currentPattern.answer}`);
+      console.log(`correct ${currentPattern.answer}`);
       let classApplied = "incorrect";
 
       if (choice === currentPattern.answer) {
@@ -98,3 +106,6 @@ answers &&
     });
   });
 startGame();
+
+// I left some logs to show how the quiz works
+// in the console. These would be normally removed otherwise.

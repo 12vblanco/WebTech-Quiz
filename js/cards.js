@@ -1,3 +1,4 @@
+// All the information for the quiz in an array of objects
 let patternsArray = [
   {
     id: "1",
