@@ -25,5 +25,8 @@ JavaScript ES2015
 
 ## Setup
 
-There is no setup required. Just run the URL in a web browser.
+There is no setup required. Just run the URL in a web browser.<br/>
+https://12vblanco.github.io/WebTech-Quiz/ <br/><br/>
+or<br/>
+https://webtech-quiz.netlify.app/score.html <br/>
 The latest version of Google Chrome (currently 100.0.4896.133) and a screen larger than 640px in width are recommended for optimal quality.
