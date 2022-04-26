@@ -1,7 +1,7 @@
 <svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 6C0 2.68629 2.68629 0 6 0H594C597.314 0 600 2.68629 600 6V593.418C600 596.732 597.314 599.418 594 599.418H5.99999C2.68629 599.418 0 596.732 0 593.418V6Z" fill="#5D5921"/>
 <rect y="209.465" width="600" height="113.61" fill="#0147C3"/>
-<path d="M0 488.808H600V600H0V488.808Z" fill="white"/>
+<path d="M0 488.808H600V600H0V488.808Z" fill="#F1F1F1"/>
 <path d="M0 325.073H600V414.073H0V325.073Z" fill="#CF0410"/>
 <path d="M0 411H600V508H0V411Z" fill="#6C8391"/>
 </svg>
