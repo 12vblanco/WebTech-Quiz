@@ -50,7 +50,7 @@ const getNewPattern = () => {
       MAX_score = score;
     }
 
-    return (window.location.href = "/score.html");
+    return (window.location.href = "./score.html");
   }
   answersEntered = true;
 
